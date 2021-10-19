@@ -28,7 +28,12 @@ export const global = globalCss({
 
   /* Set core body defaults */
   body: {
-    minHeight: "100vh",
+    margin:0,
+    padding: 0,
+    height: "100%",
+    backgroundColor: "$black",
+    color: "$white",
+    fontFamily: "$system",
     textRendering: "optimizeSpeed",
     lineHeight: "1.5",
   },
@@ -68,14 +73,7 @@ export const global = globalCss({
     height: "100%",
     fontSize: "1.125rem",
   },
-
-  body: {
-    height: "100%",
-    backgroundColor: "$black",
-    color: "$white",
-    fontFamily: "$system",
-  },
-
+  
   /* custom scrollbar */
   "::-webkit-scrollbar": {
     width: "$2",
