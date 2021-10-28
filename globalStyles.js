@@ -7,11 +7,20 @@ export const global = globalCss({
     boxSizing: "border-box",
     lineHeight: 1.45,
     fontSmooth: "auto",
+    scrollBehavior: "smooth",
   },
 
   /* Remove default margin */
   "body, h1, h2, h3, h4, p, figure, blockquote, dl, dd": {
     margin: 0,
+  },
+
+  //anchor
+  a: {
+    all: "unset",
+    cursor: "pointer",
+    color: "inherit",
+    textDecoration: "none",
   },
 
   /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -28,7 +37,7 @@ export const global = globalCss({
 
   /* Set core body defaults */
   body: {
-    margin:0,
+    margin: 0,
     padding: 0,
     height: "100%",
     backgroundColor: "$black",
@@ -36,11 +45,6 @@ export const global = globalCss({
     fontFamily: "$system",
     textRendering: "optimizeSpeed",
     lineHeight: "1.5",
-  },
-
-  /* A elements that don't have a class get default styles */
-  "a:not([class])": {
-    textDecorationSkipInk: "auto",
   },
 
   /* Make images easier to work with */
@@ -73,7 +77,7 @@ export const global = globalCss({
     height: "100%",
     fontSize: "1.125rem",
   },
-  
+
   /* custom scrollbar */
   "::-webkit-scrollbar": {
     width: "$2",
@@ -104,10 +108,6 @@ export const global = globalCss({
 
   p: {
     marginBottom: "$2",
-  },
-
-  a: {
-    cursor: "pointer",
   },
 
   /* selection */
