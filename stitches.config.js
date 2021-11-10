@@ -49,6 +49,17 @@ export const { createTheme, css, getCssText, globalCss, styled, theme } =
         8: "2.25rem",
         9: "3rem",
       },
+      lineHeights: {
+        1: "1rem",
+        2: "1.25rem",
+        3: "1.5rem",
+        4: "1.75rem",
+        5: "1.75rem",
+        6: "2rem",
+        7: "2.25rem",
+        8: "2.5rem",
+        9: "1",
+      },
       fontWeights: {
         thin: "300",
         regular: "400",
