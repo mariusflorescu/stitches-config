@@ -4,6 +4,8 @@ export const global = globalCss({
   // CSS reset by Andy Bell https://piccalil.li/blog/a-modern-css-reset/
   /* Box sizing rules */
   "*, *::before, *::after": {
+    margin: 0,
+    padding: 0,
     boxSizing: "border-box",
     lineHeight: 1.45,
     fontSmooth: "auto",
@@ -37,8 +39,6 @@ export const global = globalCss({
 
   /* Set core body defaults */
   body: {
-    margin: 0,
-    padding: 0,
     height: "100%",
     backgroundColor: "$black",
     color: "$white",
@@ -56,20 +56,6 @@ export const global = globalCss({
   /* Inherit fonts for inputs and buttons */
   "input, button, textarea, select": {
     font: "inherit",
-  },
-
-  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-  "@media (prefers-reduced-motion: reduce)": {
-    "html:focus-within": {
-      scrollBehavior: "auto",
-    },
-
-    "*, *::before, *::after": {
-      animationDuration: "0.01ms !important",
-      animationIterationCount: "1 !important",
-      transitionDuration: "0.01 !important",
-      scrollBehavior: "auto !important",
-    },
   },
 
   /* custom global css */
