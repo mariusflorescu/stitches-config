@@ -60,6 +60,13 @@ export const { createTheme, css, getCssText, globalCss, styled, theme } =
         8: "2.5rem",
         9: "1",
       },
+      letterSpacings: {
+        tighter: "-0.05em",
+        tight: "0.025em",
+        normal: "0em",
+        wide: "0.025em",
+        wider: "0.05em",
+      },
       fontWeights: {
         thin: "300",
         regular: "400",
